@@ -1,8 +1,8 @@
-import axios from 'axios';
+import axios from 'axios'
 
 export default axios.create({
-  baseURL: 'http://localhost:8080/api/customer/',
+  baseURL: 'http://backend-hcms.herokuapp.com/api/customer/',
   headers: {
     'Content-Type': 'application/json',
   },
-});
+})
