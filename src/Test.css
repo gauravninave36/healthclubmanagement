@@ -1,0 +1,20 @@
+
+.btn11{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: rgba(255, 122, 0);
+    color: #fff;
+    border-radius: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    box-shadow: 0 10px 40px rgba(255, 122, 0, 0.4);
+
+}
+
+.video-containerrrr{
+    background-image: url("./pages/customer/videos/gym.mp4");
+    height: 600px;
+    width: 600px;
+    border: 2px solid red;
+    
+}

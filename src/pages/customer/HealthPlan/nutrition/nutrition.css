@@ -1,0 +1,39 @@
+.nutriBackground{
+    background-image: url('../../images/nutriBackground.png');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video1 {
+   background-image: url('../../images/VideoThumbnails/Tut1.png');
+}
+
+.video2 {
+    background-image: url('../../images/VideoThumbnails/Tut2.png');
+ }
+
+ .video3 {
+    background-image: url('../../images/VideoThumbnails/Tut3.png');
+ }
+
+ .video4 {
+    background-image: url('../../images/VideoThumbnails/Tut4.png');
+ }
+
+ .video5 {
+    background-image: url('../../images/VideoThumbnails/Tut5.png');
+ }
+
+ .video6 {
+    background-image: url('../../images/VideoThumbnails/Tut6.png');
+ }
+
+ .video7 {
+    background-image: url('../../images/VideoThumbnails/Tut7.png');
+ }
+
+ .video8 {
+    background-image: url('../../images/VideoThumbnails/Tut8.png');
+ }

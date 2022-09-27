@@ -1,0 +1,17 @@
+.updateDiv{
+    background-color: antiquewhite; 
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btnSignup{
+    position: relative;
+    height: 40px;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;
+}

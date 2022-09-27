@@ -1,0 +1,28 @@
+.bg{
+    background-image: url("../images/bg.jpg");
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.video11{
+    margin-top: 200px;
+  
+}
+
+.btn-login{
+    height: 45px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+/* .logincol{
+    border: 2px solid red;
+} */
+
+.signup{
+    margin-left: 100px;
+    margin-top: 10px;
+}

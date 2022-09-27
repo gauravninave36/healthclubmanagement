@@ -1,0 +1,7 @@
+.ghomebutton {
+  color: honeydew !important;
+  border: 1px solid white;
+}
+.ghomeAdmin::hover {
+  background-color: rgb(13, 202, 240) !important;
+}

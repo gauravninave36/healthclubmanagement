@@ -1,0 +1,30 @@
+.bgYourClub{
+    /* background-color: antiquewhite;  */
+    background-image: url("../images/AccAndClub.webp");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clubDetailsDiv{
+    /* border: 2px solid red; */
+    margin-top: 50px;
+}
+
+.clubDetailsInnerDiv{
+    /* border: 2px solid blue; */
+    height: 400px;
+    min-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(10, 0, 0, 0.877);
+}
+
+.someDetails{
+    /* border: 2px solid blue; */
+    height: 400px;
+    width: 100%;
+    margin-left: 70px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(10, 0, 0, 0.877);
+}

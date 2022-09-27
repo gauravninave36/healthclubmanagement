@@ -1,0 +1,7 @@
+.yogaBackground{
+    background-image: url("../../images/yogaBackground.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

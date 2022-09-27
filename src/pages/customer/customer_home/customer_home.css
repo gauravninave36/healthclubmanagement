@@ -1,0 +1,65 @@
+.root{
+    background-color:antiquewhite;
+    height: 100%;
+}
+
+.home-img{
+    height:450px;
+    width: 100%;
+    margin-top: 14px;
+    box-shadow: 0 10px 20px  rgba(255, 122, 0, 0.4);
+
+}
+
+.planDiv{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 100%;
+    margin-top: 20px;
+}
+.planDetailsDiv{
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 100%;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.selectPlanDiv{
+    border: 2px solid blue;
+    width: 600px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px  rgba(255, 122, 0, 0.4);
+}
+
+.basicPlan{
+    border: 2px solid purple;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+
+}
+
+.elitePlan{
+    border: 2px solid purple;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+
+
+}
+
+.superElitePlan{
+    border: 2px solid purple;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+
+
+}
