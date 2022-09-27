@@ -1,5 +1,5 @@
 const config = {
-  serverURL: 'http://backend-hcms.herokuapp.com',
+  serverURL: 'https://backend-hcms.herokuapp.com',
 }
 
 export default config
