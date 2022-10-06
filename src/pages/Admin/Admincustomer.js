@@ -5,14 +5,43 @@ import Time from './components/time'
 import styles from './AdminStyles/admin.css'
 import TableCustomers from './components/tableCustomers'
 import Poweroff from './components/poweroff'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
+import config from '../../config'
+import { useNavigate } from 'react-router-dom'
 
 const Admincustomer = function () {
+  const navigate = useNavigate()
   const [bartrue, setbartrue] = useState(true)
+  const [frachisedetails, setfrachisedetails] = useState([])
+  const [Plandetails, setPlandetails] = useState([])
+
   const barr = () => {
     setbartrue(false)
   }
+
+  useEffect(() => {
+    if (!sessionStorage['token']) {
+      navigate('/AdminLogin')
+    } else {
+      getFrachiseDetails()
+      getPlanDetails()
+    }
+  }, [])
+  const [planId, setplanId] = useState(0)
+  const [clubId, setclubId] = useState(0)
   const [acttrue, setacttrue] = useState(true)
 
+  const getPlanDetails = () => {
+    axios.get(config.serverURL + '/admin/getAllPlan').then((Response) => {
+      setPlandetails(Response.data)
+    })
+  }
+  const getFrachiseDetails = () => {
+    axios.get(config.serverURL + '/admin/getAllClub').then((Response) => {
+      setfrachisedetails(Response.data)
+    })
+  }
   return (
     <div class='container-{breakpoint}'>
       <div class='row align-items-start justify-content-start'>
@@ -48,8 +77,46 @@ const Admincustomer = function () {
               Customers
             </h1>
           </div>
-
-          <TableCustomers height='80vh' />
+          <div className='d-flex justify-content-end'>
+            <div
+              className='d-flex'
+              style={{
+                textDecoration: 'none',
+                color: 'black',
+                marginRight: '3%',
+              }}>
+              <select
+                class=' form-select form-select-sm'
+                aria-label='.form-select-sm example'
+                style={{
+                  marginRight: '3%',
+                }}
+                onChange={(e) => {
+                  setplanId(e.target.value)
+                }}>
+                <option selected value={0}>
+                  All Plan
+                </option>
+                {Plandetails.map((plan) => {
+                  return <option value={plan.id}>{plan.planName}</option>
+                })}
+              </select>
+              <select
+                class=' form-select form-select-sm'
+                aria-label='.form-select-sm example'
+                onChange={(e) => {
+                  setclubId(e.target.value)
+                }}>
+                <option selected value={0}>
+                  All Club
+                </option>
+                {frachisedetails.map((club) => {
+                  return <option value={club.id}>{club.clubName}</option>
+                })}
+              </select>
+            </div>
+          </div>
+          <TableCustomers height='80vh' planId={planId} clubId={clubId} />
         </div>
         <div class=''>
           <Poweroff></Poweroff>

@@ -15,13 +15,28 @@ const TableCustomers = (props) => {
       setcustomerDetails(Response.data)
     })
   }
+  const updateCustomerDetails = () => {
+    axios
+      .post(config.serverURL + '/admin/getCustomerbyPidCid', body)
+      .then((Response) => {
+        setcustomerDetails(Response.data)
+      })
+  }
+
+  const body = {
+    pid: props.planId,
+    cid: props.clubId,
+  }
+
+  // useEffect(() => {
+  // }, [])
   useEffect(() => {
     if (!sessionStorage['token']) {
       navigate('/AdminLogin')
     } else {
-      getEmployeeDetails()
+      updateCustomerDetails()
     }
-  }, [])
+  })
 
   return (
     <div
