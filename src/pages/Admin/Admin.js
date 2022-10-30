@@ -74,7 +74,6 @@ const Admin = function () {
         <div class='col-xl-2 col-lg-9 col-md-9 '>
           <Poweroff></Poweroff>
           <Time />
-          <TableMessage height='400' />
         </div>
       </div>
     </div>
