@@ -1,5 +1,5 @@
 const config = {
-  serverURL: 'http://localhost:8080/',
+  serverURL: 'https://hcmsbackend.onrender.com/',
 }
 
 export default config
