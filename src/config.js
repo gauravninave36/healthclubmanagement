@@ -1,5 +1,5 @@
 const config = {
-  serverURL: 'https://backend-hcms.herokuapp.com',
+  serverURL: 'https://hcmsbackend.netlify.app/',
 }
 
 export default config
