@@ -1,5 +1,5 @@
 const config = {
-  serverURL: 'https://hcmsbackend.netlify.app/',
+  serverURL: 'https://hcmsbackend.onrender.com/',
 }
 
 export default config
